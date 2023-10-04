@@ -1,0 +1,47 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(13, 183, 83);
+    color: white;
+}
+
+.nav__user{
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav__user-icon{
+    margin-right: 10px;
+
+}
+
+
+.menu__icon-container {
+    position: relative;
+}
+
+.menu__dropdown {
+    position: absolute;
+    top: 100%; /* Muestra el menú debajo del ícono del menú */
+    left: 0;
+    background-color: #fff; /* Fondo del menú */
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1; /* Asegura que el menú esté en la parte superior */
+}
+
+.menu__dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__dropdown li {
+    padding: 10px;
+    cursor: pointer;
+}
+  
+
