@@ -1,0 +1,38 @@
+.menu{
+    width: 200px;
+    height: 500px;
+}
+
+
+
+.menu__title{
+   font-size: 20px;
+   text-align: center;
+   border-bottom: 2px solid white;
+}
+
+
+.menu__lista--item{
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 2px solid white;
+    
+    
+}
+
+.menu__salir {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 15px;
+    text-align: center;
+}
+
+.menu__salir--text {
+    margin-right: 8px;
+  }
+
+.menu__salir--icon {
+    width: 40px; /* Ajusta el ancho del icono según sea necesario */
+    height: 40px;
+}

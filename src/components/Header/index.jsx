@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import {AiOutlineMenu, AiOutlineAlert} from  'react-icons/ai'
+import Menu from "./Menu";
 import "../../css/Header.css"
 
 
@@ -18,15 +19,11 @@ function Header (){
     return <div>
         <nav className="nav">
             <div className="menu__icon-container">
-                <AiOutlineMenu size={40} onClick={toggleMenu}/>
+                <AiOutlineMenu size={40} onClick={toggleMenu} className="icon"/>
 
                 {isMenuOpen && (
                 <div className="menu__dropdown">
-                    <ul>
-                        <li>Opción 1</li>
-                        <li>Opción 2</li>
-                        <li>Opción 3</li>
-                    </ul>
+                    <Menu/>
                 </div>
                 )}
             </div>
