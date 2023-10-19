@@ -3,12 +3,16 @@ import { SlPeople } from 'react-icons/sl';
 import Button from '@mui/material/Button';
 import "../../../css/Card.css"
 
-function Card(){
+function Card(props){
+    const{area, logo} = props
+
     return <div className="card">
-        <div className="card__color"></div>
-        <h2 className="card__text">Trabajadores</h2>
-        <SlPeople size={40} className="card__icon"/>
-        <Button variant="contained" color="success" className="card__button">Entrar</Button>
+        <div className="card__color" >
+           
+        </div>
+        <h2 className="card__text">{area}</h2>
+        {logo}
+        <button className="card__button" type="button">Entrar</button>
     </div>
 }
 

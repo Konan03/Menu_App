@@ -1,20 +1,24 @@
 .card{
-display: flex;
+  display: flex;
   flex-direction: column; /* Alinea los elementos en una columna */
   align-items: center; /* Alinea los elementos horizontalmente en el centro */
   border: 1px solid black; /* Agrega un borde negro a la tarjeta */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
   padding: 20px;
   position: relative;
-  max-width: 300px; /* Ajusta el ancho máximo de la tarjeta según sea necesario */
-  margin: 0 auto;
+  /*max-width: 300px;*/ /* Ajusta el ancho máximo de la tarjeta según sea necesario */
+  /*margin: 0 auto;*/
+  max-width: calc(33.33% - 20px);
   border-radius: 5px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+ 
 }
 
 .card__color {
     height: 20%; /* Ocupa toda la altura de la tarjeta */
     width: 100%; /* Ocupa todo el ancho de la tarjeta */
-    background-color: rgb(13, 183, 83);
+    background-color: rgb(7, 2, 101);
     position: absolute;
     top: 0; /* Se coloca en la parte superior de la tarjeta */
     left: 0; /* Se coloca en la esquina izquierda de la tarjeta */
@@ -23,6 +27,7 @@ display: flex;
 
 .card__text {
     margin-top: 20px; /* Agrega margen superior al título (ajusta según sea necesario) */
+    line-height: 1.2; 
 }
 
 .card__icon{
@@ -30,5 +35,13 @@ display: flex;
 }
 
 .card__button{
-    margin-bottom: 20px;
+    font-size: 15px;
+    padding: 10px 20px; /* Ajusta el relleno según tus necesidades */
+    border-radius: 5px; /* Agrega esquinas redondeadas si lo deseas */
+    /* Agrega cualquier otro estilo que desees */
+    cursor: pointer;
+}
+
+.card:last-child {
+    margin-right: 0;
 }

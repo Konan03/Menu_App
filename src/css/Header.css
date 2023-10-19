@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: rgb(13, 183, 83);
+    background-color: rgb(7, 2, 101);
     color: white;
 }
 .icon{
@@ -31,7 +31,7 @@
     position: absolute;
     top: 100%; /* Muestra el menú debajo del ícono del menú */
     left: 0;
-    background-color: rgb(13, 183, 83, 0.9); /* Fondo del menú */
+    background-color: rgb(7, 2, 101); /* Fondo del menú */
     border: 1px solid white;
     padding: 10px;
     z-index: 1; /* Asegura que el menú esté en la parte superior */

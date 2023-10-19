@@ -1,9 +1,18 @@
 import React from "react";
 import Card from "./Card/Card";
+import "../../css/Body.css"
 
-function Body(){
-    return <section>
-        <Card/>
+function Body(props){
+
+    const{secciones} = props
+    
+    return <section className="body">
+        
+             {secciones.length > 0 &&
+                secciones.map((seccion, index) => (
+                  <Card key={index} area={seccion.area} logo={seccion.logo} />
+                ))}
+        
     </section>
 }
 
