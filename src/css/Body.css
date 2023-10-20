@@ -1,6 +1,9 @@
+
+
 .body{
     margin-top: 20px;
+    margin: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Ajusta esto según tu diseño */
+    justify-content: space-between; /* Ajusta esto según tu diseño */
 }
