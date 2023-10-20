@@ -1,6 +1,6 @@
 .menu{
     width: 200px;
-    height: 500px;
+    height: 350px;
 }
 
 
@@ -22,10 +22,15 @@
 
 .menu__salir {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     font-size: 15px;
     text-align: center;
+    cursor: pointer;
+}
+
+.menu__salir h3{
+    color: rgb(84, 85, 85);
 }
 
 .menu__salir--text {
@@ -35,4 +40,5 @@
 .menu__salir--icon {
     width: 40px; /* Ajusta el ancho del icono según sea necesario */
     height: 40px;
+    color: rgb(84, 85, 85);
 }

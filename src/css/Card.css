@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column; /* Alinea los elementos en una columna */
   align-items: center; /* Alinea los elementos horizontalmente en el centro */
-  border: 1px solid black; /* Agrega un borde negro a la tarjeta */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgb(204, 208, 211); /* Agrega un borde negro a la tarjeta */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   padding: 20px;
   position: relative;
   max-width: 300px; /* Ajusta el ancho máximo de la tarjeta según sea necesario */
@@ -14,13 +14,14 @@
   margin-bottom: 20px;
   margin-right: 20px;
   flex-basis: calc(33.33% - 20px);
+  
  
 }
 
 .card__color {
     height: 20%; /* Ocupa toda la altura de la tarjeta */
     width: 100%; /* Ocupa todo el ancho de la tarjeta */
-    background-color: rgb(7, 2, 101);
+    background-color: rgb(71, 178, 248);
     position: absolute;
     top: 0; /* Se coloca en la parte superior de la tarjeta */
     left: 0; /* Se coloca en la esquina izquierda de la tarjeta */
@@ -30,6 +31,7 @@
 .card__text {
     margin-top: 20px; /* Agrega margen superior al título (ajusta según sea necesario) */
     line-height: 1.2; 
+    color: rgb(84, 85, 85);
 }
 
 .card__icon{
@@ -39,9 +41,16 @@
 .card__button{
     font-size: 15px;
     padding: 10px 20px; /* Ajusta el relleno según tus necesidades */
-    border-radius: 5px; /* Agrega esquinas redondeadas si lo deseas */
+    border-radius: 5px ; /* Agrega esquinas redondeadas si lo deseas */
     /* Agrega cualquier otro estilo que desees */
+    border-color: rgb(204, 208, 211);
     cursor: pointer;
+    color: rgb(84, 85, 85);
+    transition: transform 0.3s ease;
+}
+
+.card__button:hover {
+    transform: scale(1.05); /* Aumenta el tamaño del botón en un 5% */
 }
 
 .card:last-child {

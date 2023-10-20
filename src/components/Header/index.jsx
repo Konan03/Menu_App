@@ -32,6 +32,7 @@ function Header (){
 
     return <div>
         <nav className="nav">
+
             <div className="menu__icon-container">
                 <AiOutlineMenu size={40} onClick={toggleMenu} className="icon"/>
 
@@ -49,7 +50,7 @@ function Header (){
             <div className="nav__user">
                 <AiOutlineAlert size={20} className="nav__user-icon"/>
                 <div className="nav__user-profile">
-                    <Avatar className="nav__user-profileAvatar" onClick={toggleProfile}>H</Avatar>
+                    <Avatar className="nav__user-profileAvatar" onClick={toggleProfile}>M</Avatar>
 
                     {isProfileOpen && (
                         <div className="nav__user-menuProfile">
