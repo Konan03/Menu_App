@@ -11,6 +11,8 @@ import { deepOrange, deepPurple } from '@mui/material/colors';
 
 
 
+
+
 function Header (){
 
     // Estado para rastrear si el menú está abierto
@@ -20,10 +22,12 @@ function Header (){
   // Función para alternar el estado del menú
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
+    setProfileOpen(false);
   };
 
   const toggleProfile = () =>{
     setProfileOpen(!isProfileOpen)
+    setMenuOpen(false);
   };
 
     return <div>
@@ -55,6 +59,8 @@ function Header (){
 
                 </div>
             </div>
+
+
 
             
 

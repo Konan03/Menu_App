@@ -39,18 +39,46 @@
     border: 1px solid white;
     padding: 10px;
     z-index: 1; /* Asegura que el menú esté en la parte superior */
+    transition: all 0.3s ease;
 }
 
-.menu__dropdown ul {
+.nav__user-menuProfile{
+    position: absolute;
+    top: 100%; /* Muestra el menú debajo del ícono del menú */
+    left: 0;
+    background-color: rgb(7, 2, 101); /* Fondo del menú */
+    border: 1px solid white;
+    padding: 10px;
+    z-index: 1; /* Asegura que el menú esté en la parte superior */
+    transition: all 0.3s ease; /* Agrega una transición suave */
+    
+}
+
+
+.nav__user-menuProfile:before {
+    content: '';
+    position: absolute;
+    top: -10px; /* Ajusta la posición de la flecha según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent rgb(7, 2, 101);
+  }
+
+.menu__dropdown ul, .nav__user-menuProfile ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.menu__dropdown li {
+
+.menu__dropdown li, .nav__user-menuProfile li {
     padding: 10px;
     cursor: pointer;
     color: white;
 }
+
+
   
 
