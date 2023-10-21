@@ -12,7 +12,7 @@ function Body(props){
         
              {secciones.length > 0 &&
                 secciones.map((seccion, index) => (
-                  <Card key={index} area={seccion.area} logo={seccion.logo} />
+                  <Card key={index} area={seccion.area} logo={seccion.logo} ruta={seccion.ruta} />
                 ))}
         
     </section>

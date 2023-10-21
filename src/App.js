@@ -24,7 +24,7 @@ function App() {
   
       area:"Trabajadores",
       logo: <SlPeople size={40} className="card__icon"/>,
-      ruta: "/trabajadores"
+      ruta: '/trabajadores'
     },
     {
       area:"Ausentismo",
