@@ -57,7 +57,6 @@ function App() {
     <Router>
       
       <Header/>
-      {/*<Body secciones={secciones}/>*/}
       <Routes>
         <Route path='/' element={<Body secciones={secciones}/>}/>
         <Route path='/trabajadores' element={<Workers/>}/>

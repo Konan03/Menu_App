@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 function Card(props){
     const{area, logo, ruta} = props
-    console.log("ruta:" + ruta)
+   
 
     return <div className="card">
         <div className="card__color" >
