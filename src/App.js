@@ -50,7 +50,7 @@ function App() {
       area:"Administrar sedes",
       logo: <BsBuildings size={40} className="card__icon"/>,
       ruta: "/administrar_redes"
-    }
+    },
     ])
 
   return (
