@@ -3,6 +3,7 @@ import Card from "./Card/Card";
 import "../../css/Body.css"
 import "../../css/Card.css"
 
+
 function Body(props){
 
     const{secciones} = props

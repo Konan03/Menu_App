@@ -2,9 +2,11 @@ import React from "react";
 import { SlPeople } from 'react-icons/sl';
 import Button from '@mui/material/Button';
 import "../../../css/Card.css"
+import { Link } from 'react-router-dom';
+
 
 function Card(props){
-    const{area, logo} = props
+    const{area, logo, ruta} = props
 
     return <div className="card">
         <div className="card__color" >
@@ -12,7 +14,9 @@ function Card(props){
         </div>
         <h2 className="card__text">{area}</h2>
         {logo}
-        <button className="card__button" type="button">Entrar</button>
+        <Link to={ruta}>
+            <button className="card__button" type="button">Entrar</button>
+        </Link>
     </div>
 }
 
