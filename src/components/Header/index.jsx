@@ -30,7 +30,7 @@ function Header (){
     setMenuOpen(false);
   };
 
-    return <div>
+    return <div>    
         <nav className="nav">
 
             <div className="menu__icon-container">

@@ -19,6 +19,29 @@ import Vaccination from './components/Body/Pages/Vaccination';
 
 function App() {
 
+  const[workers, setWorkers] = useState([
+    {
+      name:"Manuel",
+      
+    },
+    {
+      name:"Jose"
+    },
+    {
+      name:"Juan"
+    },
+    {
+      name:"Steven"
+    },
+    {
+      name:"La sapa"
+    },
+    {
+      name: "stefi-errote"
+    }
+  ])
+
+
   const[secciones, actualizarSeccion ] = useState([
     {
   
@@ -59,7 +82,7 @@ function App() {
       <Header/>
       <Routes>
         <Route path='/' element={<Body secciones={secciones}/>}/>
-        <Route path='/trabajadores' element={<Workers/>}/>
+        <Route path='/trabajadores' element={<Workers workers={workers}/>}/>
         <Route path='/ausentismo' element={<Absenteeism/>}/>
         <Route path='/accidentalidad' element={<RateAccident/>}/>
         <Route path='/enfermedad_laboral' element={<OccupationalDisease/>}/> 

@@ -1,0 +1,32 @@
+.body__workers{
+    
+}
+
+.body__workers--button{
+    margin: 20px;
+}
+
+.card__button--workers{
+    font-size: 15px;
+    padding: 10px 20px; /* Ajusta el relleno según tus necesidades */
+    border-radius: 5px ; /* Agrega esquinas redondeadas si lo deseas */
+    /* Agrega cualquier otro estilo que desees */
+    border-color: rgb(204, 208, 211);
+    cursor: pointer;
+    color: rgb(84, 85, 85);
+    transition: transform 0.3s ease;
+    margin: 5px;
+}
+
+.card__button--workers:hover{
+    transform: scale(1.05);
+}
+
+.body__workers--w{
+    margin: 20px;
+    margin-right: 0px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
