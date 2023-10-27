@@ -1,0 +1,28 @@
+.table-container {
+    max-height: 300px; /* Altura máxima antes de mostrar la barra de desplazamiento */
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical cuando sea necesario */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: rgb(204, 208, 211); /* Cambia el color a tu preferencia */ 
+}
+
+.table thead th {
+    background-color: rgb(204, 208, 211); /* Cambia el color a tu preferencia */
+    color: rgb(84, 85, 85); /* Cambia el color del texto a tu preferencia */
+}
+
+.table {
+    font-size: 16px;
+    border: 1px solid #ccc; /* Borde exterior de la tabla */
+    border-radius: 10px;
+    
+}
+
+.table td, .table th {
+    text-align: center;
+    border: 1px solid #ccc; /* Borde de 1 píxel sólido de color gris (#ccc) */
+    padding: 10px; /* Ajusta el relleno según tus necesidades */
+}
+
+

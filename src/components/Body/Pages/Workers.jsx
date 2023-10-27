@@ -16,7 +16,9 @@ function Workers (props){
             <button className="card__button--workers" type="button">Editar</button>
             <button className="card__button--workers" type="button">Eliminar</button>
         </div>
-        <CardWorker workers={workers}></CardWorker>
+        <div className="body__workers--table">
+            <CardWorker workers={workers} className="table__workers"></CardWorker>
+        </div>
     </div>
 }
 

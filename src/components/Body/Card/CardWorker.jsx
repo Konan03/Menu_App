@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../../../css/CardWorker.css"
 
 function CardWorker(props){
     const{name, img} = props
@@ -7,8 +7,8 @@ function CardWorker(props){
     const{workers} = props
    
 
-    return <div className="table">
-        <table>
+    return <div className="table__container">
+        <table className="table">
             <thead>
                 <tr>
                     <th>ID</th>

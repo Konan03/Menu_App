@@ -1,9 +1,23 @@
 .body__workers{
-    
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 .body__workers--button{
     margin: 20px;
+    margin-bottom: 10px;
+}
+
+.body__workers--table{
+    display: block;
+    justify-content: center; /* Centra horizontalmente en el eje X */
+    align-items: center; /* Centra verticalmente en el eje Y */
+    height: 100%;
+    margin-top: 50px;
+    
 }
 
 .card__button--workers{
@@ -29,4 +43,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
+}
+
+.table__workers{
+
 }
