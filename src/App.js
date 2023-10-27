@@ -21,23 +21,40 @@ function App() {
 
   const[workers, setWorkers] = useState([
     {
+      id: 1,
       name:"Manuel",
-      
+      apellido: "Caicedo",
+      email: "manuel@gmail.com"
     },
     {
-      name:"Jose"
+      id: 2,
+      name:"Manuel",
+      apellido: "Caicedo",
+      email: "manuel@gmail.com"
     },
     {
-      name:"Juan"
+      id: 3,
+      name:"Manuel",
+      apellido: "Caicedo",
+      email: "manuel@gmail.com"
     },
     {
-      name:"Steven"
+      id: 4,
+      name:"Manuel",
+      apellido: "Caicedo",
+      email: "manuel@gmail.com"
     },
     {
-      name:"La sapa"
+      id: 5,
+      name:"Manuel",
+      apellido: "Caicedo",
+      email: "manuel@gmail.com"
     },
     {
-      name: "stefi-errote"
+      id: 6,
+      name:"Manuel",
+      apellido: "Caicedo",
+      email: "manuel@gmail.com"
     }
   ])
 

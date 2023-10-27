@@ -16,15 +16,7 @@ function Workers (props){
             <button className="card__button--workers" type="button">Editar</button>
             <button className="card__button--workers" type="button">Eliminar</button>
         </div>
-
-        <div className="body__workers--container">
-            <div className="body__workers--w">
-            {workers.length > 0 &&
-                workers.map((worker, index) => (
-                  <CardWorker key={index} name={worker.name} />
-                ))}
-            </div>
-        </div>
+        <CardWorker workers={workers}></CardWorker>
     </div>
 }
 
